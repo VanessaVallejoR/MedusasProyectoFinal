@@ -1,4 +1,4 @@
-¿Que tipo de datos quieres usar?
+¿Que tipo de datos quieres usar? 
 
 ¿En que formato estan los datos?
 

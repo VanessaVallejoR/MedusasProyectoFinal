@@ -1,7 +1,5 @@
-¿Que tipo de datos quieres usar? 
+Phyllostomus discolor
+Phyllostomus hastatus
 
-¿En que formato estan los datos?
-
-¿Qué quieres hacer con los datos?
 
 

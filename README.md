@@ -61,8 +61,7 @@ Los murciélagos a menudo son malentendidos y temidos, lo que ha llevado a su pe
 # Alineación de la filogenia
 ![imagen](https://github.com/VanessaVallejoR/MedusasProyectoFinal/assets/172319968/90e8ca11-76d9-41f2-bdb4-17ebf5a17869)
 
-# Video acerca de murciélagos 
-https://www.youtube.com/watch?v=qvkKZ6BieQQ&ab_channel=NationalGeographicEspa%C3%B1a
+
 
 
 

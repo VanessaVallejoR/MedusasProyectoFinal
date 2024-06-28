@@ -1,0 +1,266 @@
+IQ-TREE 2.3.4 COVID-edition built Apr 27 2024
+
+Input file name: aln.afa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 455967
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 21 sequences with 8084 nucleotide sites
+Number of constant sites: 4719 (= 58.3746% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 4719 (= 58.3746% of all sites)
+Number of parsimony informative sites: 1860
+Number of distinct site patterns: 2494
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+G4         -37599.410   75294.821 +    0.829   75295.406 +    0.832   75630.707 +    0.688
+TVM+F+G4         -37604.706   75303.412 -   0.0113   75303.974 -   0.0115   75632.301 +     0.31
+GTR+F+R2         -37600.752   75299.504 +   0.0797   75300.114 +    0.079   75642.389 -    0.002
+GTR+F+I+G4       -37604.756   75307.512 -  0.00145   75308.122 -  0.00144   75650.397 - 3.65e-005
+GTR+F+I+R2       -37601.466   75302.932 -   0.0144   75303.567 -   0.0141   75652.814 - 1.09e-005
+GTR+F+R3         -37599.231   75300.463 -   0.0493   75301.123 -   0.0477   75657.342 - 1.13e-006
+GTR+F+I+R3       -37599.417   75302.834 -   0.0151   75303.520 -   0.0144   75666.711 - 1.05e-008
+GTR+F+I          -37631.594   75359.188 - 8.73e-015   75359.774 - 8.77e-015   75695.075 - 7.25e-015
+TIM3+F+G4        -37641.966   75375.933 - 2.02e-018   75376.471 - 2.08e-018   75697.824 - 1.83e-015
+TPM3u+F+G4       -37647.393   75384.786 - 2.41e-020   75385.301 - 2.51e-020   75699.680 - 7.25e-016
+TVMe+G4          -37662.248   75412.495 - 2.32e-026   75412.988 - 2.44e-026   75720.391 - 2.31e-020
+SYM+G4           -37659.896   75409.792 - 8.97e-026   75410.307 - 9.32e-026   75724.686 - 2.69e-021
+TIM+F+G4         -37656.951   75405.902 - 6.27e-025   75406.440 - 6.45e-025   75727.793 - 5.7e-022
+K3Pu+F+G4        -37662.127   75414.255 - 9.63e-027   75414.770 -   1e-026   75729.149 - 2.89e-022
+TIM2+F+G4        -37664.548   75421.096 - 3.15e-028   75421.634 - 3.24e-028   75742.987 - 2.86e-025
+TPM2u+F+G4       -37669.578   75429.155 - 5.6e-030   75429.670 - 5.82e-030   75744.049 - 1.68e-025
+TPM3+G4          -37686.608   75457.217 - 4.51e-036   75457.666 - 4.85e-036   75751.118 - 4.91e-027
+K3P+G4           -37687.714   75459.429 - 1.49e-036   75459.878 - 1.6e-036   75753.330 - 1.62e-027
+TIM3e+G4         -37684.188   75454.375 - 1.87e-035   75454.846 - 1.99e-035   75755.274 - 6.14e-028
+TIMe+G4          -37685.346   75456.692 - 5.87e-036   75457.163 - 6.24e-036   75757.591 - 1.93e-028
+TN+F+G4          -37685.717   75461.433 - 5.48e-037   75461.949 - 5.7e-037   75776.327 - 1.65e-032
+HKY+F+G4         -37690.897   75469.793 - 8.39e-039   75470.286 - 8.82e-039   75777.690 - 8.33e-033
+K2P+G4           -37710.862   75503.723 - 3.6e-046   75504.151 - 3.9e-046   75790.627 - 1.29e-035
+TPM2+G4          -37707.091   75498.183 - 5.74e-045   75498.632 - 6.17e-045   75792.084 - 6.24e-036
+TNe+G4           -37708.492   75500.985 - 1.41e-045   75501.434 - 1.52e-045   75794.885 - 1.54e-036
+TIM2e+G4         -37704.798   75495.597 - 2.09e-044   75496.067 - 2.22e-044   75796.495 - 6.87e-037
+GTR+F            -37825.125   75744.250 - 2.12e-098   75744.812 - 2.15e-098   76073.140 - 5.82e-097
+F81+F+G4         -38839.530   77765.059 -        0   77765.530 -        0   78065.958 -        0
+JC+G4            -38859.978   77799.957 -        0   77800.364 -        0   78079.862 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 1.1151
+  A-G: 3.4859
+  A-T: 0.4689
+  C-G: 1.1507
+  C-T: 3.9759
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3214
+  pi(C) = 0.2049
+  pi(G) = 0.2317
+  pi(T) = 0.2419
+
+Rate matrix Q:
+
+  A   -0.8487    0.1687    0.5963   0.08373
+  C    0.2646    -1.171    0.1968    0.7101
+  G    0.8271    0.1741     -1.18    0.1786
+  T    0.1112    0.6014     0.171   -0.8837
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.223
+
+ Category  Relative_rate  Proportion
+  1         0.1792         0.25
+  2         0.5349         0.25
+  3         1.029          0.25
+  4         2.257          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -37599.4052 (s.e. 353.7189)
+Unconstrained log-likelihood (without tree): -48447.0134
+Number of free parameters (#branches + #model parameters): 48
+Akaike information criterion (AIC) score: 75294.8105
+Corrected Akaike information criterion (AICc) score: 75295.3959
+Bayesian information criterion (BIC) score: 75630.6973
+
+Total tree length (sum of branch lengths): 0.9236
+Sum of internal branch lengths: 0.3636 (39.3653% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Phyllostomus_discolor' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++----Phyllostomus_discolor
+|
+|                                               +--Pteropus_alecto
+|                                            +--| (100)
+|                                            |  |  +--Pteropus_giganteus
+|                                            |  +--| (100)
+|                                            |     +--Pteropus_vampyrus
+|                               +------------| (100)
+|                               |            +----Rousettus_aegyptiacus
+|                            +--| (100)
+|                            |  |      +---------Hipposideros_armiger
+|                            |  +------| (100)
+|                            |         +----------Rhinolophus_ferrumequinum
+|                        +---| (100)
+|                        |   |               +---------Pipistrellus_kuhlii
+|                        |   |            +--| (100)
+|                        |   |            |  +--Eptesicus_fuscus
+|                        |   |     +------| (100)
+|                        |   |     |      |      +--Myotis_lucifugus
+|                        |   |     |      |  +---| (100)
+|                        |   |     |      |  |   |  +--Myotis_myotis
+|                        |   |     |      |  |   +--| (58)
+|                        |   |     |      |  |      |  +--Myotis_daubentonii
+|                        |   |     |      |  |      +--| (48)
+|                        |   |     |      |  |         +------Myotis_davidii
+|                        |   |     |      +--| (100)
+|                        |   |     |         +--Myotis_brandtii
+|                        |   |  +--| (100)
+|                        |   |  |  +-----------Miniopterus_natalensis
+|                        |   +--| (100)
+|                        |      +------------Molossus_molossus
+|               +--------| (100)
+|               |        +----------Pteronotus_mesoamericanus
+|           +---| (100)
+|           |   +-----------Desmodus_rotundus
++-----------| (100)
+|           |    +--------Artibeus_jamaicensis
+|           +----| (100)
+|                +--------Sturnira_hondurensis
+|
++---Phyllostomus_hastatus
+
+Tree in newick format:
+
+(Phyllostomus_discolor:0.0214011232,(((((((Pteropus_alecto:0.0027880553,(Pteropus_giganteus:0.0015448715,Pteropus_vampyrus:0.0008925999)100:0.0030181357)100:0.0119959198,Rousettus_aegyptiacus:0.0224664652)100:0.0558199757,(Hipposideros_armiger:0.0404495803,Rhinolophus_ferrumequinum:0.0457557816)100:0.0302005418)100:0.0155381280,((((Pipistrellus_kuhlii:0.0433196737,Eptesicus_fuscus:0.0102201814)100:0.0135922986,((Myotis_lucifugus:0.0142815634,(Myotis_myotis:0.0080716689,(Myotis_daubentonii:0.0119631787,Myotis_davidii:0.0300936055)48:0.0018577558)58:0.0077920935)100:0.0194111718,Myotis_brandtii:0.0082715397)100:0.0158932259)100:0.0297955811,Miniopterus_natalensis:0.0500089838)100:0.0057173324,Molossus_molossus:0.0549293848)100:0.0080953197)100:0.0181257041,Pteronotus_mesoamericanus:0.0476658873)100:0.0377730367,Desmodus_rotundus:0.0508048177)100:0.0170210948,(Artibeus_jamaicensis:0.0366067698,Sturnira_hondurensis:0.0385067733)100:0.0219005733)100:0.0500378296,Phyllostomus_hastatus:0.0199904558);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -37599.405260
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----Phyllostomus_discolor
+|
+|                                               +--Pteropus_alecto
+|                                            +--| (100)
+|                                            |  |  +--Pteropus_giganteus
+|                                            |  +--| (100)
+|                                            |     +--Pteropus_vampyrus
+|                               +------------| (100)
+|                               |            +----Rousettus_aegyptiacus
+|                            +--| (100)
+|                            |  |      +---------Hipposideros_armiger
+|                            |  +------| (100)
+|                            |         +----------Rhinolophus_ferrumequinum
+|                        +---| (100)
+|                        |   |               +---------Pipistrellus_kuhlii
+|                        |   |            +--| (100)
+|                        |   |            |  +--Eptesicus_fuscus
+|                        |   |     +------| (100)
+|                        |   |     |      |      +--Myotis_lucifugus
+|                        |   |     |      |  +---| (100)
+|                        |   |     |      |  |   |  +--Myotis_myotis
+|                        |   |     |      |  |   +--| (58)
+|                        |   |     |      |  |      |  +--Myotis_daubentonii
+|                        |   |     |      |  |      +--| (48)
+|                        |   |     |      |  |         +------Myotis_davidii
+|                        |   |     |      +--| (100)
+|                        |   |     |         +--Myotis_brandtii
+|                        |   |  +--| (100)
+|                        |   |  |  +-----------Miniopterus_natalensis
+|                        |   +--| (100)
+|                        |      +------------Molossus_molossus
+|               +--------| (100)
+|               |        +----------Pteronotus_mesoamericanus
+|           +---| (100)
+|           |   +-----------Desmodus_rotundus
++-----------| (100)
+|           |    +--------Artibeus_jamaicensis
+|           +----| (100)
+|                +--------Sturnira_hondurensis
+|
++---Phyllostomus_hastatus
+
+
+Consensus tree in newick format: 
+
+(Phyllostomus_discolor:0.0214006410,(((((((Pteropus_alecto:0.0027887392,(Pteropus_giganteus:0.0015449372,Pteropus_vampyrus:0.0008920620)100:0.0030182653)100:0.0119958014,Rousettus_aegyptiacus:0.0224657367)100:0.0558199382,(Hipposideros_armiger:0.0404489030,Rhinolophus_ferrumequinum:0.0457552793)100:0.0301991615)100:0.0155380424,((((Pipistrellus_kuhlii:0.0433188513,Eptesicus_fuscus:0.0102196325)100:0.0135928132,((Myotis_lucifugus:0.0142809935,(Myotis_myotis:0.0080713194,(Myotis_daubentonii:0.0119619624,Myotis_davidii:0.0300927289)48:0.0018582903)58:0.0077915839)100:0.0194110704,Myotis_brandtii:0.0082717597)100:0.0158933905)100:0.0297953751,Miniopterus_natalensis:0.0500075724)100:0.0057166520,Molossus_molossus:0.0549274382)100:0.0080957730)100:0.0181093635,Pteronotus_mesoamericanus:0.0476654057)100:0.0377861410,Desmodus_rotundus:0.0508045268)100:0.0170177302,(Artibeus_jamaicensis:0.0366057625,Sturnira_hondurensis:0.0385065599)100:0.0218992075)100:0.0500403726,Phyllostomus_hastatus:0.0199904062);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t aln.afa.treefile -m "GTR{1.1151,3.48589,0.468861,1.15075,3.97593}+F{0.321421,0.204917,0.231722,0.24194}+G4{1.22297}" --length 8084
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s aln.afa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s aln.afa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Jun 26 13:04:28 2024
+Total CPU time used: 26.953125 seconds (0h:0m:26s)
+Total wall-clock time used: 44.5862188 seconds (0h:0m:44s)
+

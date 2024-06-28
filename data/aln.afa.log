@@ -1,0 +1,187 @@
+IQ-TREE multicore version 2.3.4 COVID-edition for Windows 64-bit built Apr 27 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    DESKTOP-6QIQ0S3 (AVX512, FMA3, 15 GB RAM)
+Command: C:\Users\Vane\Desktop\iqtree-2.3.4-Windows\bin\iqtree2.exe -s aln.afa -B 1000
+Seed:    455967 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun 26 13:03:43 2024
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file aln.afa ... Fasta format detected
+Reading fasta file: done in 0.0031315 secs
+Alignment most likely contains DNA/RNA sequences
+Alignment has 21 sequences with 8084 columns, 2494 distinct patterns
+1860 parsimony-informative, 1505 singleton sites, 4719 constant sites
+                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001647 secs
+   1  Phyllostomus_discolor       14.75%    failed      0.00%
+   2  Pteropus_alecto             15.56%    failed      0.28%
+   3  Desmodus_rotundus           27.88%    failed      1.29%
+   4  Pipistrellus_kuhlii         14.75%    passed     99.08%
+   5  Molossus_molossus           30.26%    failed      0.00%
+   6  Artibeus_jamaicensis        47.48%    failed      0.00%
+   7  Hipposideros_armiger        57.83%    failed      4.20%
+   8  Sturnira_hondurensis        47.80%    failed      0.00%
+   9  Pteronotus_mesoamericanus   70.40%    passed     80.11%
+  10  Myotis_lucifugus            17.37%    passed     40.59%
+  11  Myotis_myotis               18.20%    passed     25.05%
+  12  Phyllostomus_hastatus       15.54%    failed      0.00%
+  13  Myotis_daubentonii          22.88%    passed     13.24%
+  14  Rhinolophus_ferrumequinum   17.00%    passed     27.33%
+  15  Pteropus_giganteus          15.28%    failed      0.25%
+  16  Myotis_davidii              23.79%    passed     31.92%
+  17  Miniopterus_natalensis      15.12%    failed      1.70%
+  18  Myotis_brandtii             14.53%    passed     94.68%
+  19  Pteropus_vampyrus           15.24%    failed      0.50%
+  20  Eptesicus_fuscus            18.16%    failed      1.75%
+  21  Rousettus_aegyptiacus       16.23%    failed      0.55%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                       25.52%  13 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.007 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -37613.915
+Optimal log-likelihood: -37613.071
+Rate parameters:  A-C: 1.11395  A-G: 3.48816  A-T: 0.47047  C-G: 1.14367  C-T: 3.93901  G-T: 1.00000
+Base frequencies:  A: 0.321  C: 0.205  G: 0.232  T: 0.242
+Proportion of invariable sites: 0.264
+Gamma shape alpha: 5.280
+Parameters optimization took 1 rounds (0.065 sec)
+Time for fast ML tree search: 0.383 seconds
+
+NOTE: ModelFinder requires 26 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 8084) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         37825.125    47  75744.250    75744.812    76073.140
+  2  GTR+F+I       37631.594    48  75359.188    75359.774    75695.075
+  3  GTR+F+G4      37599.410    48  75294.821    75295.406    75630.707
+  4  GTR+F+I+G4    37604.756    49  75307.512    75308.122    75650.397
+  5  GTR+F+R2      37600.752    49  75299.504    75300.114    75642.389
+  6  GTR+F+R3      37599.231    51  75300.463    75301.123    75657.342
+ 14  GTR+F+I+R2    37601.466    50  75302.932    75303.567    75652.814
+ 15  GTR+F+I+R3    37599.417    52  75302.834    75303.520    75666.711
+ 25  SYM+G4        37659.896    45  75409.792    75410.307    75724.686
+ 47  TVM+F+G4      37604.706    47  75303.412    75303.974    75632.301
+ 69  TVMe+G4       37662.248    44  75412.495    75412.988    75720.391
+ 91  TIM3+F+G4     37641.966    46  75375.933    75376.471    75697.824
+113  TIM3e+G4      37684.188    43  75454.375    75454.846    75755.274
+135  TIM2+F+G4     37664.548    46  75421.096    75421.634    75742.987
+157  TIM2e+G4      37704.798    43  75495.597    75496.067    75796.495
+179  TIM+F+G4      37656.951    46  75405.902    75406.440    75727.793
+201  TIMe+G4       37685.346    43  75456.692    75457.163    75757.591
+223  TPM3u+F+G4    37647.393    45  75384.786    75385.301    75699.680
+245  TPM3+G4       37686.608    42  75457.217    75457.666    75751.118
+267  TPM2u+F+G4    37669.578    45  75429.155    75429.670    75744.049
+289  TPM2+G4       37707.091    42  75498.183    75498.632    75792.084
+311  K3Pu+F+G4     37662.127    45  75414.255    75414.770    75729.149
+333  K3P+G4        37687.714    42  75459.429    75459.878    75753.330
+355  TN+F+G4       37685.717    45  75461.433    75461.949    75776.327
+377  TNe+G4        37708.492    42  75500.985    75501.434    75794.885
+399  HKY+F+G4      37690.897    44  75469.793    75470.286    75777.690
+421  K2P+G4        37710.862    41  75503.723    75504.151    75790.627
+443  F81+F+G4      38839.530    43  77765.059    77765.530    78065.958
+465  JC+G4         38859.978    40  77799.957    77800.364    78079.862
+Akaike Information Criterion:           GTR+F+G4
+Corrected Akaike Information Criterion: GTR+F+G4
+Bayesian Information Criterion:         GTR+F+G4
+Best-fit model: GTR+F+G4 chosen according to BIC
+
+All model information printed to aln.afa.model.gz
+CPU time for ModelFinder: 5.078 seconds (0h:0m:5s)
+Wall-clock time for ModelFinder: 7.831 seconds (0h:0m:7s)
+Generating 1000 samples for ultrafast bootstrap (seed: 455967)...
+
+NOTE: 16 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -37599.410
+Optimal log-likelihood: -37599.407
+Rate parameters:  A-C: 1.11560  A-G: 3.48862  A-T: 0.46881  C-G: 1.15091  C-T: 3.98015  G-T: 1.00000
+Base frequencies:  A: 0.321  C: 0.205  G: 0.232  T: 0.242
+Gamma shape alpha: 1.223
+Parameters optimization took 1 rounds (0.098 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0081688 secs
+Computing ML distances took 0.019859 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0001736 secs
+Computing RapidNJ tree took 0.004848 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -37605.813
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.613 second
+Computing log-likelihood of 98 initial trees ... 2.083 seconds
+Current best score: -37599.407
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -37599.406
+Iteration 10 / LogL: -37599.954 / Time: 0h:0m:15s
+Iteration 20 / LogL: -37599.718 / Time: 0h:0m:19s
+Finish initializing candidate tree set (2)
+Current best tree score: -37599.406 / CPU time: 10.460
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -37603.162 / Time: 0h:0m:22s (0h:0m:36s left)
+Iteration 40 / LogL: -37599.409 / Time: 0h:0m:25s (0h:0m:27s left)
+Iteration 50 / LogL: -37602.190 / Time: 0h:0m:28s (0h:0m:21s left)
+Log-likelihood cutoff on original alignment: -37628.805
+Iteration 60 / LogL: -37599.531 / Time: 0h:0m:31s (0h:0m:16s left)
+Iteration 70 / LogL: -37599.419 / Time: 0h:0m:34s (0h:0m:11s left)
+Iteration 80 / LogL: -37599.724 / Time: 0h:0m:37s (0h:0m:7s left)
+Iteration 90 / LogL: -37601.458 / Time: 0h:0m:40s (0h:0m:4s left)
+Iteration 100 / LogL: -37599.451 / Time: 0h:0m:43s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -37629.416
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:44s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -37599.406
+Optimal log-likelihood: -37599.405
+Rate parameters:  A-C: 1.11510  A-G: 3.48589  A-T: 0.46886  C-G: 1.15075  C-T: 3.97593  G-T: 1.00000
+Base frequencies:  A: 0.321  C: 0.205  G: 0.232  T: 0.242
+Gamma shape alpha: 1.223
+Parameters optimization took 1 rounds (0.108 sec)
+BEST SCORE FOUND : -37599.405
+Creating bootstrap support values...
+Split supports printed to NEXUS file aln.afa.splits.nex
+Total tree length: 0.924
+
+Total number of iterations: 102
+CPU time used for tree search: 21.031 sec (0h:0m:21s)
+Wall-clock time used for tree search: 35.189 sec (0h:0m:35s)
+Total CPU time used: 26.953 sec (0h:0m:26s)
+Total wall-clock time used: 44.436 sec (0h:0m:44s)
+
+Computing bootstrap consensus tree...
+Reading input file aln.afa.splits.nex...
+21 taxa and 46 splits.
+Consensus tree written to aln.afa.contree
+Reading input trees file aln.afa.contree
+Log-likelihood of consensus tree: -37599.405
+
+Analysis results written to: 
+  IQ-TREE report:                aln.afa.iqtree
+  Maximum-likelihood tree:       aln.afa.treefile
+  Likelihood distances:          aln.afa.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          aln.afa.splits.nex
+  Consensus tree:                aln.afa.contree
+  Screen log file:               aln.afa.log
+
+Date and Time: Wed Jun 26 13:04:28 2024

@@ -50,5 +50,6 @@ Esfuerzos de Conservación:
 
 Incluyen la protección de hábitats, la construcción de refugios artificiales, y la educación pública para reducir los temores infundados y promover la coexistencia con estos importantes mamíferos.
 
+![image](https://github.com/VanessaVallejoR/MedusasProyectoFinal/assets/172319968/c9a555a9-39de-4362-83d9-fa8eb74c4b3e)
 
 
